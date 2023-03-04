@@ -1,0 +1,38 @@
+// Primary palette
+$primary-default: #012E5F;
+$primary-light: #E7F2FD;
+$primary-dark: #001731;
+
+$secondary-default: #E7B245;
+$secondary-light: #FCF6E9;
+$secondary-dark: #8B671D;
+
+// Gray Colors
+$gray-01: #F8F9FA;
+$gray-02: #F1F3F5;
+$gray-03: #E9ECEF; 
+$gray-04: #DEE2E6;
+$gray-05: #E1E2E4;
+$gray-06: #BABDC2;
+$gray-07: #343A40;
+$gray-08: #212529;
+
+// Neutral Colors
+$black: #14191E;
+$white: #FFFFFF;
+
+// Backgrounds Colors
+$bg-dark: #001731;
+$bg-light: #F8F9FA;
+
+// Others Colors
+$green-light: #30D89D;
+$green-dark: #296D38;
+$red-error: #E46060;
+$yellow-alert: #FFB34E;
+
+// Gradients Colors
+
+$linear-light: linear-gradient(73.22deg, #E7F2FD 11.54%, #FCF6E9 83.81%);
+$linear-primary: linear-gradient(133.16deg, rgba(0, 35, 72, 0.83) 0%, #001731 96.99%);
+$linear-secondary: linear-gradient(41.79deg, #8B671D -6.27%, #E7B245 100%);
