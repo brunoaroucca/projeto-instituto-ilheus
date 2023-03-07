@@ -42,22 +42,36 @@
     }
 }
 header{
+    background-color: #FFFFFF;
     .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        height: 9.2rem;
         .main-menu{
             ul{
                 display: flex;
                 align-items: center;
                 li{
+                    &:not(:first-child){
+                        margin-left: 32px;
+                    }
                     a{
                         font-weight: 400;
-                        font-size: 16px;
-                        line-height: 19px;
-
+                        font-size: 1.6rem;
+                        line-height: 1.9rem;
+                        padding: 33px 0;
                         color: #698BAF;
+                        transition: all .3s;
+                        &:hover{
+                            color: $primary-default;
+                           
+                        }
+                        &.active{
+                            color: $primary-default;
+                            font-weight: bold;
+                            border-bottom: 3px solid $secondary-default;
+                        }
                     }
                 }
             }
