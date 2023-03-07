@@ -5,13 +5,22 @@
     line-height: 19px;
     color: $primary-default;
     background-color: $secondary-default;
-    padding: 0px 2rem;
+    padding: 0rem 2rem;
     line-height: 4.1rem;
     border-radius: 4px;
     transition: all .3s ease;
 
     &:hover{
         opacity: 0.8;
-       ;
     }
+}
+
+.category-post{
+    background-color: $secondary-default;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 0.2rem 1.4rem;
+    border-radius: 20px;
+    color: $primary-dark;
 }
