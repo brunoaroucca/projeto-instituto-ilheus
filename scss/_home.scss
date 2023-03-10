@@ -1,5 +1,24 @@
 .s-hero{
-    margin-top: 4.6rem;
+    margin-top: 2.6rem;
    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 455px;
+        .left{
+            display: 1;
+            margin-right: 2rem;
+            width: 100%;
+            max-width: 900px;
+        }
+        .right{
+            width: 100%;
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 2rem;
+        }
+    }
     
 }

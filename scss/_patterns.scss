@@ -15,6 +15,90 @@
     }
 }
 
+.card-hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    overflow: hidden;
+    border-radius: 1.4rem;
+    box-shadow: 0px 4.21856px 59.0599px rgba(1, 46, 95, 0.3);
+    cursor: pointer;
+
+
+    .poster{
+        position: relative;
+        overflow: hidden;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(1, 46, 95, 0) 0%, #012E5F 80%);
+            // background: linear-gradient(0deg, #042446 20%, transparent);
+            transition: 0.5s;
+            z-index: 1;
+            bottom: -30px;
+        }
+        img{
+            width: 100%;
+            transition: transform 0.5s ease-out;
+        }
+    }
+
+    .info{
+        position: absolute;
+        width: 100%;
+        max-width: 307px;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        padding-left: 2.7rem;
+        padding-bottom: 3rem;
+
+        h2{
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 130%;
+            color: #FFFFFF;
+            transition: all .6s ease;
+        }
+    }
+
+    &.full{
+        width: 100%;
+        height: 100%;
+        
+
+        .info{
+            max-width: 598px;
+            padding-left: 46px;
+            padding-bottom: 46px;
+            h2{
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &:hover{
+        .poster{
+            img{
+                transform: scale(1.03);
+            }
+        }
+        .info{
+            h2{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 .category-post{
     background-color: $secondary-default;
     font-weight: 500;
