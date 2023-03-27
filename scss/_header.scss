@@ -1,82 +1,53 @@
-.header-top{
-    background-color: $primary-default;
-    width: 100%;
-    height: 3.6rem;
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        line-height: 3.6rem;
-        .left-container{
-            nav{
-                ul{
-                    display: flex;
-                    li{
-                        &:not(:first-child){
-                            margin-left: 48px;
-                        }
-                        a{
-                            font-weight: 400;
-                            font-size: 1.2rem;
-                            line-height: 130%;
-                            color: rgba(235, 245, 255, 0.6);
-                            transition: color .4s;
-                            &:hover{
-                                color: #ffffff;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .right-container{
-            ul{
-                display: flex;
-                li{
-                    &:not(:first-child){
-                        margin-left: 24px;
-                    }
-                }
-            }
-        }
-    }
-}
 header{
-    background-color: #FFFFFF;
-    box-shadow: 0px 40px 52px rgba(1, 46, 95, 0.02);
+  .top{
+    background: $primary-default;
+    height: 4.6rem;
+    width: 100%;
     .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left{
+        .top-menu{
+          ul{
+            display: flex;
+            li{
+              &:not(:first-child){
+                margin-left: 2.4rem;
+              }
+
+              a{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2rem;
+                line-height: 4rem;
+                color: rgba(255, 255, 255, 0.6);
+                transition: color .3s ease-in-out;
+                &:hover{
+                  color: rgba(255, 255, 255);
+  
+                }
+              }
+              
+            }
+          }
+        }
+      }
+      .right{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        height: 9.2rem;
-        .main-menu{
-            ul{
-                display: flex;
-                align-items: center;
-                li{
-                    &:not(:first-child){
-                        margin-left: 32px;
-                    }
-                    a{
-                        font-weight: 400;
-                        font-size: 1.6rem;
-                        line-height: 1.9rem;
-                        padding: 33px 0;
-                        color: #698BAF;
-                        transition: all .3s;
-                        &:hover{
-                            color: $primary-default;
-                           
-                        }
-                        &.active{
-                            color: $primary-default;
-                            font-weight: bold;
-                            border-bottom: 3px solid $secondary-default;
-                        }
-                    }
-                }
+        justify-content: center;
+        .rede-social{
+          display: flex;
+          margin-right: 1.6rem;
+          li{
+            &:not(:first-child){
+              margin-left: 1.6rem;
             }
+          }
         }
-
+      }
     }
+  }
 }
