@@ -3,6 +3,7 @@ header{
     background: $primary-default;
     height: 4.6rem;
     width: 100%;
+    line-height: 46px;
     .container{
       display: flex;
       align-items: center;
@@ -44,6 +45,54 @@ header{
           li{
             &:not(:first-child){
               margin-left: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom{
+    height: 7.6rem;
+    background: $white;
+    width: 100%;
+    line-height: 7.6rem;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .main-menu{
+        ul{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          li{
+            &:not(:first-child){
+              margin-left: 10px;
+            }
+            a{
+              position: relative;
+              font-weight: 700;
+              font-size: 12px;
+              padding: 13px 10px;
+              text-transform: uppercase;
+              color: #6E7378;
+              transition: color .3s ease-in-out;
+              &:hover, &.active{
+                color: $primary-default;
+              }
+
+              &::after{
+                content: '';
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                line-height: 12px;
+                right: -6px;
+                top: 16px;
+                background: url('../img/icons/tree.svg');
+                background-repeat: no-repeat;
+              }
             }
           }
         }

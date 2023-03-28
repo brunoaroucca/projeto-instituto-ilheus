@@ -14,7 +14,6 @@
   background: rgba($color: #ffffff, $alpha: 0.5);
   transform: rotate(90deg);
 }
-
 .current-date{
   display: flex;
   align-items: center;
@@ -29,12 +28,81 @@
   .month-year{
     display: flex;
     flex-direction: column;
+    gap: 2px;
     span{
       color: #ffffff;
       font-style: normal;
       font-weight: 400;
       font-size: 10px;
       line-height: 92.5%;
+    }
+  }
+}
+.btn{
+  display: flex;
+  background: #E7B245;
+  padding: 2px 24px;
+  box-shadow: -5px 101px 41px rgba(231, 178, 69, 0.01), -3px 57px 34px rgba(231, 178, 69, 0.05), -1px 25px 25px rgba(231, 178, 69, 0.09), 0px 6px 14px rgba(231, 178, 69, 0.1), 0px 0px 0px rgba(231, 178, 69, 0.1);
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+  span{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $primary-default;
+    position: relative;
+  }
+  img{
+    margin-left: 12px;
+  }
+
+  &:hover{
+    opacity: 0.9;
+  }
+}
+.category{
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #E7B245;
+  text-transform: uppercase;
+}
+.card-news{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dadada;
+  padding: 40px 0;
+  .image{
+    width: 100%;
+    max-width: 260px;
+    height: 195px;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    margin-right: 4rem;
+  }
+  .info{
+    .title{
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 130%;
+      color: $primary-default;
+      margin-top: 0.6rem;
+    }
+    .description{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      color: $gray-06;
+    }
+    .date{
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: $gray-06;
     }
   }
 }
