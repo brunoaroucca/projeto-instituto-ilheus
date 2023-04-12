@@ -96,13 +96,13 @@
     justify-content: space-between;
     .news{
       width: 100%;
-      max-width: 82.6rem;
+      max-width: 79.6rem;
       
     }
     .advertising{
       margin-top: 3.6rem;
       width: 100%;
-      margin-left: 2.4rem;
+      margin-left: 5.4rem;
       flex: 1;
       width: 100%;
       height: auto;
@@ -126,6 +126,37 @@
 
     .wrapper-cards{
       display: flex;
+    }
+  }
+}
+
+.s-apoiadores{
+  margin-top: 5.6rem;
+  background-color: #fff;
+  padding: 50px 0 70px 0;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      color: $gray-08;
+      margin-bottom: 60px;
+    }
+
+    .superior, .inferior{
+      display: flex;
+      &:not(:last-child){
+        margin-bottom: 2rem;
+      }
+      a{
+        &:not(:last-child){
+          margin-right: 1.6rem;
+        }
+      }
     }
   }
 }
